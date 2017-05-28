@@ -42,7 +42,7 @@ gulp.task('devless', function () {
 // dev task to compile and concat js files into a bundle
 var devjs = gulp.task('devjs', function() {
 
-    return browserify('./src/js/app.js', {debug: true, global: false})
+    return browserify('./src/js/app.js', {debug: false, global: false})
            .bundle()
            .on('error', function(err){
                 gutil.log(err);
