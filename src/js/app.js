@@ -2,10 +2,11 @@
 var $ = require('jquery');
 var websocketsSvc = require('./services/websocketsSvc');
 var statusBarHandler = require('./handlers/statusBarHandler');
+var chatHeadHandler = require('./handlers/chatHeadHandler');
+var chatPanelHandler = require('./handlers/chatPanelHandler');
 
 function onOpen(evt) {
 	statusBarHandler.manageStates("CONNECTED");
-	websocketsSvc.sendMessage('hello world', writeToScreen);
 }
 
 function onClose(evt) {
@@ -13,19 +14,16 @@ function onClose(evt) {
 }
 
 function onMessage(evt) {
-	writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data+'</span>');
-	/*setTimeout(function(){
-		websocketsSvc.closeSocket();
-	}, 5000);*/
+	chatPanelHandler.handleIncomingMessage(evt);
 }
 
 function onError(evt) {
 	statusBarHandler.manageStates("ERROR");
 }
 
-function writeToScreen(message) {
- 	console.log(message)
-}
-
 statusBarHandler.manageStates("CONNECTING");
-$(document).ready(websocketsSvc.init(onOpen, onClose, onMessage, onError));
+$(document).ready(function(){
+	websocketsSvc.init(onOpen, onClose, onMessage, onError); //initiate web sockets
+	chatHeadHandler.init();
+	chatPanelHandler.init();
+});

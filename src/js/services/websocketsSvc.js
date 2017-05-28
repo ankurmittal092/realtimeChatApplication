@@ -20,7 +20,7 @@ function closeSocket(){
 
 function sendMessage(message, callback) {
   websocket.send(message);
-  callback(message);
+  callback && callback(message);
 }
 
 module.exports = {

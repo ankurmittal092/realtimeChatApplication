@@ -3078,9 +3078,15 @@ tbody.collapse.in {
   padding: 10px;
   background: #fff;
   margin-bottom: 5px;
+  position: relative;
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-list .chat-itme-wrp.active {
   font-weight: bold;
+}
+.chat-page .pg-body .chat-cont .chat-row .chat-list .chat-itme-wrp.active:before {
+  content: ">";
+  position: absolute;
+  right: 5px;
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-panel-cont {
   position: relative;

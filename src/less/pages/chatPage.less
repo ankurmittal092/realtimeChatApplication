@@ -64,9 +64,16 @@
 					    padding: 10px;
 					    background: #fff;
 					    margin-bottom: 5px;
-
+					    position: relative;
+					    
 					    &.active {
 					    	font-weight: bold;
+
+					    	&:before {
+					    		content: ">";
+					    		position: absolute;
+					    		right: 5px;
+					    	}
 					    }
 					}
 				}
