@@ -11,7 +11,6 @@
 		color: #687584;
 
 		.pg-hdr {
-			.make-row();
 			height: 70px;
 		    line-height: 70px;
 		    background: @darkGreen;
@@ -20,7 +19,11 @@
 		    text-transform: capitalize;
 
 			.hdr-cont {
-				.container;
+				.container;	
+
+				.hdr-row {
+					.make-row();
+				}			
 			}
 		}
 

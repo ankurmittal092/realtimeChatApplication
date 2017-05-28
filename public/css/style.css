@@ -2712,10 +2712,10 @@ tbody.collapse.in {
 .row:after,
 .form-horizontal .form-group:before,
 .form-horizontal .form-group:after,
-.chat-page .pg-body .pg-hdr:before,
-.chat-page .pg-body .pg-hdr:after,
 .chat-page .pg-body .pg-hdr .hdr-cont:before,
 .chat-page .pg-body .pg-hdr .hdr-cont:after,
+.chat-page .pg-body .pg-hdr .hdr-cont .hdr-row:before,
+.chat-page .pg-body .pg-hdr .hdr-cont .hdr-row:after,
 .chat-page .pg-body .chat-cont:before,
 .chat-page .pg-body .chat-cont:after,
 .chat-page .pg-body .chat-cont .chat-row:before,
@@ -2729,8 +2729,8 @@ tbody.collapse.in {
 .container-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
-.chat-page .pg-body .pg-hdr:after,
 .chat-page .pg-body .pg-hdr .hdr-cont:after,
+.chat-page .pg-body .pg-hdr .hdr-cont .hdr-row:after,
 .chat-page .pg-body .chat-cont:after,
 .chat-page .pg-body .chat-cont .chat-row:after {
   clear: both;
@@ -2985,8 +2985,6 @@ tbody.collapse.in {
   color: #687584;
 }
 .chat-page .pg-body .pg-hdr {
-  margin-left: -5px;
-  margin-right: -5px;
   height: 70px;
   line-height: 70px;
   background: #3F968F;
@@ -3014,6 +3012,10 @@ tbody.collapse.in {
   .chat-page .pg-body .pg-hdr .hdr-cont {
     width: 1150px;
   }
+}
+.chat-page .pg-body .pg-hdr .hdr-cont .hdr-row {
+  margin-left: -5px;
+  margin-right: -5px;
 }
 .chat-page .pg-body .chat-cont {
   margin-right: auto;
