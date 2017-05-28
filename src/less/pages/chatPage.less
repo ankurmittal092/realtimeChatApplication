@@ -1,0 +1,122 @@
+.chat-page {
+	@lightGreen: #52B1A9;
+	@darkGreen: #3F968F;
+	@headerHeight: 70px;
+	@chatInputHeight: 60px;
+
+	.pg-body {
+		min-height: 100vh;
+		background-color: #fafafa;
+		font-size: 16px;
+		color: #687584;
+
+		.pg-hdr {
+			.make-row();
+			height: 70px;
+		    line-height: 70px;
+		    background: @darkGreen;
+		    color: #fff;
+		    font-size: 30px;
+		    text-transform: capitalize;
+
+			.hdr-cont {
+				.container;
+			}
+		}
+
+		.chat-cont {
+			.container;
+			height: calc(~"100vh - "@headerHeight);
+			background: #f2f2f2;
+
+			.chat-row{
+				.make-row();
+				border: 1px solid #e5ddd5;
+				// max-width: 800px;
+				// margin: 0 auto;
+
+				.chat-list {
+					.make-sm-column(4);
+					padding: 10px 5px;
+					border-right: 2px solid #e5ddd5;
+					overflow-y: auto;
+
+					.chat-itme-wrp {
+					    padding: 10px;
+					    background: #fff;
+					    margin-bottom: 5px;
+
+					    &.active {
+					    	font-weight: bold;
+					    }
+					}
+				}
+
+				.chat-panel-cont {
+					.make-sm-column(8);
+					padding: 10px 5px;
+
+					.chat-panel {
+						height: calc(~"100% - "@chatInputHeight);
+						overflow-y: auto;
+
+						.msg {
+							margin-bottom: 15px;
+						    max-width: 70%;
+						    display: inline-block;
+						    padding: 10px;
+						    background: #fff;
+						    border-radius: 5px;
+						    line-height: 1;
+						}
+
+						.msg-in {
+							.msg;
+							float: left;
+						}
+						.msg-out{
+							.msg;
+							float: right;
+							color: #fff;
+							background-color: @lightGreen; 
+						}
+
+						.left .conv {
+						    display: inline-block;
+						    padding: 5px;
+						    background: #fff;
+						    border-radius: 5px;
+						    line-height: 1;
+						}
+
+						.right .conv {
+						    display: inline-block;
+						    padding: 5px;
+						    background: #fff;
+						    border-radius: 5px;
+						    line-height: 1;
+						    background-color: #52B1A9;
+						    color: #fff;
+						}
+					}
+
+					.chat-ip-wrp {
+						height: @chatInputHeight;
+						border-top: 2px solid #e5ddd5;
+    					padding-top: 10px;
+
+    					input {
+    						height: 100%;
+    						width: 100%;
+    						padding: 5px;
+    					}
+					}
+				}
+			}
+		}
+	}
+
+	.h100 {
+		height: 100%;
+	}
+}

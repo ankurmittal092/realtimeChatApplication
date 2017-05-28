@@ -1,0 +1,25 @@
+{
+  "name": "Realtime-chat-application",
+  "version": "0.0.0",
+  "description": "Realtime Chat Application",
+  "scripts": {
+    "start": "nodemon --ext js,json --ignore report-violation.json --ignore src/js/bundle.js --ignore public/js/ --ignore node_modules/ server.js"
+  },
+  "author": "Ankur Mittal",
+  "dependencies": {
+    "bootstrap": "3.3.5",
+    "browserify": "12.0.1",
+    "express": "4.9.7",
+    "gulp": "3.9.0",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-less": "3.0.5",
+    "gulp-notify": "2.2.0",
+    "gulp-preprocess": "2.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-util": "3.0.7",
+    "jquery": "^2.2.1",
+    "keymirror": "^0.1.1",
+    "nodemon": "1.9.2",
+    "vinyl-source-stream": "1.1.0"
+  }
+}
