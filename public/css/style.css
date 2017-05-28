@@ -3060,6 +3060,17 @@ tbody.collapse.in {
     width: 33.33333333%;
   }
 }
+.chat-page .pg-body .chat-cont .chat-row .chat-list .search {
+  height: 50px;
+  border-bottom: 2px solid #e5ddd5;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.chat-page .pg-body .chat-cont .chat-row .chat-list .search input {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+}
 .chat-page .pg-body .chat-cont .chat-row .chat-list .chat-itme-wrp {
   padding: 10px;
   background: #fff;
