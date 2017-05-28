@@ -3044,6 +3044,7 @@ tbody.collapse.in {
   margin-left: -5px;
   margin-right: -5px;
   border: 1px solid #e5ddd5;
+  position: relative;
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-list {
   position: relative;
@@ -3070,6 +3071,8 @@ tbody.collapse.in {
   height: 100%;
   width: 100%;
   padding: 5px;
+  border: 1px solid rgba(104, 117, 131, 0.2);
+  border-radius: 3px;
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-list .chat-itme-wrp {
   padding: 10px;
@@ -3104,6 +3107,7 @@ tbody.collapse.in {
   background: #fff;
   border-radius: 5px;
   line-height: 1;
+  box-shadow: 0px 3px 5px rgba(104, 117, 132, 0.4);
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-panel-cont .chat-panel .msg-in {
   margin-bottom: 15px;
@@ -3113,6 +3117,7 @@ tbody.collapse.in {
   background: #fff;
   border-radius: 5px;
   line-height: 1;
+  box-shadow: 0px 3px 5px rgba(104, 117, 132, 0.4);
   float: left;
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-panel-cont .chat-panel .msg-out {
@@ -3123,6 +3128,7 @@ tbody.collapse.in {
   background: #fff;
   border-radius: 5px;
   line-height: 1;
+  box-shadow: 0px 3px 5px rgba(104, 117, 132, 0.4);
   float: right;
   color: #fff;
   background-color: #52B1A9;
@@ -3152,6 +3158,22 @@ tbody.collapse.in {
   height: 100%;
   width: 100%;
   padding: 5px;
+  border: 1px solid rgba(104, 117, 131, 0.2);
+  border-radius: 3px;
+}
+.chat-page .pg-body .chat-cont .chat-row .status-bar {
+  background: #fafafa;
+  padding: 10px;
+  color: #C7425D;
+  border-bottom: 2px solid #e5ddd5;
+  transition: all ease 0.5s;
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 .chat-page .h100 {
   height: 100%;

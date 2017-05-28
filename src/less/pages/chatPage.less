@@ -35,6 +35,7 @@
 			.chat-row{
 				.make-row();
 				border: 1px solid #e5ddd5;
+				position: relative;
 				// max-width: 800px;
 				// margin: 0 auto;
 
@@ -54,6 +55,8 @@
 							height: 100%;
 							width: 100%;
 							padding: 5px;
+							border: 1px solid rgba(104, 117, 131, .2);
+							border-radius: 3px;
 						}
 					}
 
@@ -84,6 +87,7 @@
 						    background: #fff;
 						    border-radius: 5px;
 						    line-height: 1;
+						    box-shadow: 0px 3px 5px rgba(104, 117, 132, 0.4);
 						}
 
 						.msg-in {
@@ -125,8 +129,25 @@
     						height: 100%;
     						width: 100%;
     						padding: 5px;
+    						border: 1px solid rgba(104, 117, 131, .2);
+    						border-radius: 3px;
     					}
 					}
+				}
+
+				.status-bar {
+					background: #fafafa;
+				    padding: 10px;
+				    color: #C7425D;
+				    border-bottom: 2px solid #e5ddd5;
+				    transition: all ease 0.5s;
+				    text-align: center;
+				    font-weight: 600;
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    right: 0;
+				    z-index: 1;
 				}
 			}
 		}
