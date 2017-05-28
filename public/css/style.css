@@ -3043,7 +3043,7 @@ tbody.collapse.in {
 .chat-page .pg-body .chat-cont .chat-row {
   margin-left: -5px;
   margin-right: -5px;
-  border: 1px solid #e5ddd5;
+  border: 1px solid #e1e1e1;
   position: relative;
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-list {
@@ -3052,7 +3052,7 @@ tbody.collapse.in {
   padding-left: 5px;
   padding-right: 5px;
   padding: 10px 5px;
-  border-right: 2px solid #e5ddd5;
+  border-right: 2px solid #e1e1e1;
   overflow-y: auto;
 }
 @media (min-width: 768px) {
@@ -3063,7 +3063,7 @@ tbody.collapse.in {
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-list .search {
   height: 50px;
-  border-bottom: 2px solid #e5ddd5;
+  border-bottom: 2px solid #e1e1e1;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -3157,7 +3157,7 @@ tbody.collapse.in {
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-panel-cont .chat-ip-wrp {
   height: 60px;
-  border-top: 2px solid #e5ddd5;
+  border-top: 2px solid #e1e1e1;
   padding-top: 10px;
 }
 .chat-page .pg-body .chat-cont .chat-row .chat-panel-cont .chat-ip-wrp input {
@@ -3171,7 +3171,7 @@ tbody.collapse.in {
   background: #fafafa;
   padding: 10px;
   color: #C7425D;
-  border-bottom: 2px solid #e5ddd5;
+  border-bottom: 2px solid #e1e1e1;
   transition: all ease 0.5s;
   text-align: center;
   font-weight: 600;

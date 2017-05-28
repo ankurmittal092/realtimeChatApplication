@@ -12,7 +12,6 @@ var populateChats = function(id){
 	$chatPanelContJS.show();
 	
 	if(chatDataStore.getCurrentActiveChat()!= id){
-		debugger;
 		$chatPanelJS.html('');
 		chatDataStore.setCurrentActiveChat(id);
 
