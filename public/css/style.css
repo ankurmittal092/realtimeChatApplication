@@ -3180,6 +3180,7 @@ tbody.collapse.in {
   left: 0;
   right: 0;
   z-index: 1;
+  display: none;
 }
 .chat-page .h100 {
   height: 100%;
