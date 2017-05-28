@@ -27,6 +27,7 @@ var populateChats = function(id){
 			}
 		}
 	}
+	$sendMessageInput.focus();
 };
 
 var fnGenerateMessageObj = function(message, type){

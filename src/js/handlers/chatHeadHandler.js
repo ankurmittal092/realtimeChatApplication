@@ -3,6 +3,7 @@ var chatPanelHandler = require('./chatPanelHandler');
 var chatDataStore = require('../dataStore/chatDataStore');
 
 var $chatListWrpJS = $($('.chatListWrpJS')[0]);
+var $searchFriendsInput = $($('#searchFriendsInput'));
 
 var fnHandleActiveClass = function(chatHeadClickedID) {
 	var chatheadArr = $chatListWrpJS.find('.chat-itme-wrp');
@@ -18,6 +19,23 @@ var fnHandleActiveClass = function(chatHeadClickedID) {
 	}
 };
 
+var handleSearchFriendsInputKeypup = function(event){
+	
+	var filter = $(this).val(); 
+    // Loop through the comment list
+    $(".chat-itme-wrp").each(function(){
+
+        // If the list item does not contain the text phrase fade it out
+        if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+            $(this).fadeOut();
+
+        // Show the list item if the phrase matches and increase the count by 1
+        } else {
+            $(this).show();
+        }
+    });
+};
+
 var init = function () {	
 	$chatListWrpJS.on( "click", ".chat-itme-wrp", function() {
 		
@@ -25,6 +43,8 @@ var init = function () {
 		fnHandleActiveClass(chatHeadClickedID);
 		chatPanelHandler.populateChats(chatHeadClickedID);
 	});
+
+	$searchFriendsInput.on("keyup", handleSearchFriendsInputKeypup)
 
 	//creating chat heads
 	var chatList = chatDataStore.getFriendsList();
