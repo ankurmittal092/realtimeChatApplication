@@ -13,7 +13,6 @@ var less = require('gulp-less');
 var autoprefixer = require('gulp-autoprefixer');
 var notify = require('gulp-notify');
 var gutil = require('gulp-util');
-var tap = require('gulp-tap');
 
 var preprocess = require('gulp-preprocess');
 

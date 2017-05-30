@@ -3054,6 +3054,7 @@ tbody.collapse.in {
   padding: 10px 5px;
   border-right: 2px solid #e1e1e1;
   overflow-y: auto;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .chat-page .pg-body .chat-cont .chat-row .chat-list {
